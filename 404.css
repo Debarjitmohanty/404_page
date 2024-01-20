@@ -1,0 +1,79 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: consolas;
+}
+.error
+{
+  min-height: 100vh;
+  background: linear-gradient(0deg,#fff,#03a9f4);
+}
+.sky
+{
+  position: relative;
+  widows: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sky h2
+{
+  font-size: 16em;
+  color: #fff;
+  text-shadow: 15px 15px 0 rgba(0,0,0,0.1);
+}
+.sky h2 span{
+  display: inline-block;
+  animation: animate 2s ease-in-out infinite;
+}
+.sky h2 span:nth-child(even)
+{
+  animation-delay: -1s;
+}
+@keyframes animate {
+  0%, 100% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+}
+.field 
+{
+  padding: 100px;
+  height: 40vh;
+  background-color:#6e2308;
+  box-shadow: inset 0 20px 10px #51680c;
+  text-align: center;
+}
+.field h2
+{
+  color:black;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.field a
+{
+  background: #fff;
+  color: #000;
+  width:160px;
+  height: 50px;
+  line-height: 30px;
+  border-radius: 50px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  height: 30px;
+}
+@media (max-width: 576px) {
+  .sky h2 {
+    font-size: 8em;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .sky h2 {
+    font-size: 12em;
+  }
+}
